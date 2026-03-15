@@ -1,0 +1,35 @@
+# NOTE: This config is for the deprecated Python version.
+# The .NET runner uses appsettings.json — see forge/src/Forge.Runner/appsettings.json
+
+runner:
+  id: null  # auto-generated on first run, then persisted to .factory-runner-id
+  name: "seb-pc"  # human-readable name, used in GitHub labels (na#seb-pc)
+  heartbeat_interval: 30  # seconds
+  dead_timeout: 120  # seconds — reclaim tasks from runners silent longer than this
+
+github:
+  owner: "the-org-or-user"  # owner namespace (org or user)
+  owner_username: "seb"  # only pick up issues authored by this user
+  token_env: "GITHUB_TOKEN"  # read from env var
+  poll_interval: 60  # seconds
+  review_poll_interval: 30  # seconds
+
+target_repos:
+  - name: "rack-mobile"
+    label: "forge-ready"
+    clone_path: "/home/seb/dev/rack-mobile"
+  - name: "rack-api"
+    label: "forge-ready"
+    clone_path: "/home/seb/dev/rack-api"
+
+postgres:
+  connection_string_env: "FORGE_DB_URL"  # read from env var
+
+executor:
+  backend: "cli"  # or "api" in future
+  cli:
+    command: "claude"
+    timeout: 600  # seconds
+  api:
+    model: "claude-sonnet-4-20250514"
+    api_key_env: "ANTHROPIC_API_KEY"

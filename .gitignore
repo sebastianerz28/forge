@@ -1,0 +1,95 @@
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio files
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+
+# Build outputs
+*.dll
+*.exe
+*.pdb
+*.cache
+*.ilk
+*.log
+*.lib
+*.sbr
+*.opensdf
+*.sdf
+*.ipdb
+*.iobj
+
+# NuGet
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
+*.nupkg
+**/packages/repositories.config
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# .NET Core / SDK
+global.json
+!global.json
+*.nuget.props
+*.nuget.targets
+
+# MSBuild
+*.metaproj
+*.metaproj.tmp
+*_i.c
+*_p.c
+*_h.h
+*.tlb
+*.tlh
+*.tmp
+*.tmp_proj
+*.vspscc
+*.vssscc
+
+# Test results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+TestResult.xml
+*.trx
+coverage*/
+*.coverage
+*.coveragexml
+
+# Rider / JetBrains
+.idea/
+*.sln.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Python venv (project-specific)
+.venv/
+__pycache__/
+*.pyc
+
+# Config (keep example, ignore local overrides)
+config.yaml
+!config.example.yaml
+
+# Misc
+*.swp
+*.bak
+*~
+.env

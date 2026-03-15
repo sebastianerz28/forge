@@ -1,0 +1,15 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Forge.Coordination/Forge.Coordination.csproj" />
+    <Project Path="src/Forge.Core/Forge.Core.csproj" />
+    <Project Path="src/Forge.Executor/Forge.Executor.csproj" />
+    <Project Path="src/Forge.GitHub/Forge.GitHub.csproj" />
+    <Project Path="src/Forge.Runner/Forge.Runner.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Forge.Coordination.Tests/Forge.Coordination.Tests.csproj" />
+    <Project Path="tests/Forge.Core.Tests/Forge.Core.Tests.csproj" />
+    <Project Path="tests/Forge.Executor.Tests/Forge.Executor.Tests.csproj" />
+    <Project Path="tests/Forge.GitHub.Tests/Forge.GitHub.Tests.csproj" />
+  </Folder>
+</Solution>
