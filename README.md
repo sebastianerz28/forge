@@ -1,4 +1,4 @@
-# Forge
+# Forge | Early Proto-type to Meta-Harness concept
 
 Forge is a system that gets better at building software every time it runs.
 
